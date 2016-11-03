@@ -1,2 +1,3 @@
 # 3DHollowModel
 This uses output from RockWorks17 software of a solid model (presumably a lead contamination plume) in an XYZG text format. The file is read and each voxel location is examined as to whether the voxel is inside or outside the 'blob'. If it's inside the blob (i.e. it is touching a voxel on all 6 sides) the voxel is not rendered. If the voxel is outside the model (i.e. it is touching 5 or less other voxels) the voxel is rendered. Without removing the voxels inside the model the model is too lagy to view and manipulate. 
+Running the code takes a long time. View the developer console to see the analysis of each voxel. The voxel count is 450,213 at the end. 
